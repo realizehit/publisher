@@ -21,6 +21,8 @@ function Publisher ( options ) {
     this.redis = new Redis( options.redis )
 }
 
+module.exports = Publisher
+
 Publisher.prototype.publish = function Publisher$publish ( pattern, payload ) {
     var redis = this.redis
 
